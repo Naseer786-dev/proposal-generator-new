@@ -101,7 +101,7 @@ export default function CreateProposalPage() {
           {step === 3 && (
             <StepContent title="Scope & Deliverables" subtitle="What will you deliver?">
               <TextArea label="Project Scope" value={form.scope} onChange={(v) => update("scope", v)} placeholder="Describe the overall project scope..." />
-              <TextArea label="Deliverables" value={form.deliverables} onChange={(v) => update("deliverables", v)} placeholder="List specific deliverables..." />
+              <TextArea label="Deliverables" value={form.deliverables} onChange={(v) => update("deliverables", v)} placeholder="List specific deliverables (homepage, logo files, etc.)..." />
             </StepContent>
           )}
 
@@ -114,8 +114,8 @@ export default function CreateProposalPage() {
           {step === 5 && (
             <StepContent title="Pricing" subtitle="Set your price and deposit">
               <div className="grid grid-cols-2 gap-4">
-                <Input label="Total Price ($)" value={form.totalPrice} onChange={(v) => update("totalPrice", v)} type="number" />
-                <Input label="Deposit %" value={form.depositPercent} onChange={(v) => update("depositPercent", v)} type="number" />
+                <Input label="Total Price ($)" value={form.totalPrice} onChange={(v) => update("totalPrice", v)} placeholder="5000" type="number" />
+                <Input label="Deposit %" value={form.depositPercent} onChange={(v) => update("depositPercent", v)} placeholder="50" type="number" />
               </div>
               <div className="mt-6 p-5 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl border border-indigo-100">
                 <div className="flex justify-between items-center mb-2">
