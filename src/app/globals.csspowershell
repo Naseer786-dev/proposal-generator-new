@@ -1,0 +1,1 @@
+@tailwind utilities  -Command "Set-Content -Path 'src\app\globals.css' -Value '@tailwind base`n@tailwind components`n@tailwind utilities'"

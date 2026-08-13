@@ -1,3 +1,5 @@
+import './globals.css'
+
 export const metadata = {
   title: 'PropGen - Proposal Generator',
   description: 'Generate professional proposals with Stripe payments',
