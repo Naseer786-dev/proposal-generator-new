@@ -1,14 +1,21 @@
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
-export const metadata = {
-  title: 'PropGen - Proposal Generator',
-  description: 'Generate professional proposals with Stripe payments',
-}
+export const metadata: Metadata = {
+  title: "PropGen - Professional Proposals, Instant Payments",
+  description: "Create stunning project proposals and collect deposits instantly via PayPal",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className="bg-white">{children}</body>
+      <body className="antialiased">
+        {children}
+      </body>
     </html>
-  )
+  );
 }
